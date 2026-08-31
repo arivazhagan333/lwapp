@@ -12,7 +12,7 @@ import CoursesPage from './pages/CoursesPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
-import AdminDashboard from './pages/AdminDashboard';
+import AdminPortal from './pages/admin/AdminPortal';
 import CertificateDownloadPage from './pages/CertificateDownloadPage';
 
 export default function App() {
@@ -49,7 +49,7 @@ export default function App() {
             <Route path="/gallery" element={<GalleryPage onOpenEnquiry={handleOpenEnquiry} />} />
             <Route path="/download" element={<CertificateDownloadPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin" element={<AdminPortal />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
