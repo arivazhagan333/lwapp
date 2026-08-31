@@ -13,7 +13,7 @@ git init
 git add .
 git commit -m "Initial commit of Livewire Salem MERN app"
 git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/livewire-salem-mern.git
+git remote add origin https://github.com/arivazhagan333/lwapp.git
 git push -u origin main
 ```
 
