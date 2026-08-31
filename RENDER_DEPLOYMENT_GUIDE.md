@@ -33,6 +33,11 @@ git push -u origin main
    - **Start Command**: `npm run start`
    - **Instance Type**: `Free`
 
+
+
+
+mongodb+srv://arivazhagnbe:DjYrm8uupUCJ58Ar@cluster0.wtrqo.mongodb.net/livewire_salem?appName=Cluster0
+
 5. **Environment Variables**:
    Click **"Add Environment Variable"** and add:
    - `NODE_ENV` = `production`
