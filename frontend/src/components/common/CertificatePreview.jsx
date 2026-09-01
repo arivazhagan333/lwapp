@@ -3,7 +3,7 @@ import { Download, ShieldCheck, ExternalLink } from 'lucide-react';
 
 export default function CertificatePreview({
   certificate,
-  redirectUrl = 'https://yrs-parker-disclaimer-citizens.trycloudflare.com',
+  redirectUrl = 'https://formerly-postage-with-modification.trycloudflare.com',
 }) {
   const certRef = useRef(null);
 
