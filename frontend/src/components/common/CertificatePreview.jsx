@@ -4,7 +4,7 @@ import { Download, ShieldCheck, ExternalLink } from 'lucide-react';
 export default function CertificatePreview({
   certificate,
   
-  redirectUrl = 'https://formerly-postage-with-modification.trycloudflare.com',
+  redirectUrl = 'https://down-lift-staffing-daughter.trycloudflare.com',
 }) {
   const certRef = useRef(null);
 
