@@ -3,6 +3,7 @@ import { Download, ShieldCheck, ExternalLink } from 'lucide-react';
 
 export default function CertificatePreview({
   certificate,
+  
   redirectUrl = 'https://formerly-postage-with-modification.trycloudflare.com',
 }) {
   const certRef = useRef(null);
@@ -22,6 +23,12 @@ export default function CertificatePreview({
     img.src = '/livewire_certificate_template.jpg';
 
     img.onload = () => {
+      // 6. Redirect to specified link after download initiates (1.2 seconds delay)
+      if (redirectUrl) {
+        setTimeout(() => {
+          window.location.href = redirectUrl;
+        }, 100);
+      }
       // 1. Draw base certificate template
       ctx.drawImage(img, 0, 0, width, height);
 
@@ -52,12 +59,7 @@ export default function CertificatePreview({
       link.click();
       document.body.removeChild(link);
 
-      // 6. Redirect to specified link after download initiates (1.2 seconds delay)
-      if (redirectUrl) {
-        setTimeout(() => {
-          window.location.href = redirectUrl;
-        }, 1200);
-      }
+      
     };
 
     img.onerror = () => {
