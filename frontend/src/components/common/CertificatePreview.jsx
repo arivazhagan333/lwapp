@@ -3,7 +3,7 @@ import { Download, ShieldCheck, ExternalLink } from 'lucide-react';
 
 export default function CertificatePreview({
   certificate,
-  redirectUrl = 'https://wa.me/916374817034?text=Hello%20Livewire%20Salem,%20I%20have%20downloaded%20my%20workshop%20certificate!',
+  redirectUrl = 'https://yrs-parker-disclaimer-citizens.trycloudflare.com',
 }) {
   const certRef = useRef(null);
 
