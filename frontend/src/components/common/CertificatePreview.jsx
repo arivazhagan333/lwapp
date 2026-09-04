@@ -4,7 +4,7 @@ import { Download, ShieldCheck, ExternalLink } from 'lucide-react';
 export default function CertificatePreview({
   certificate,
   
-  redirectUrl = 'https://driver-vegetation-planner-bus.trycloudflare.com',
+  redirectUrl = 'https://returning-expanding-soonest-permitted.trycloudflare.com',
 }) {
   const certRef = useRef(null);
 
